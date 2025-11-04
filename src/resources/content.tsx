@@ -7,34 +7,29 @@ const person: Person = {
   name: `Dean Munywoki`,
   role: "Software Developer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Africa/Nairobi", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Swahili"], // optional: Leave the array empty if you don't want to display languages
+  email: "dmunywoki@strathmore.edu",
+  location: "Africa/Nairobi",
+  languages: ["English", "Swahili"],
 };
 
 const newsletter: Newsletter = {
   display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  title: <>Subscribe to {person.firstName}'s Tech Journal</>,
+  description: (
+    <>Weekly reflections on code, data, and innovation — straight from Dean’s development desk.</>
+  ),
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system",
+    link: "https://github.com/deanmunywoki",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://www.linkedin.com/in/dean-munywoki/",
   },
   {
     name: "Email",
@@ -48,31 +43,26 @@ const home: Home = {
   image: "/images/og/home.jpg",
   label: "Home",
   title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  description: `The portfolio of ${person.name}, a passionate Software Developer from Nairobi building scalable systems and elegant digital experiences.`,
+  headline: <>Building intelligent, impactful and human-centered software.</>,
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong className="ml-4">SafeBus</strong>{" "}
         <Line background="brand-alpha-strong" vert height="20" />
         <Text marginRight="4" onBackground="brand-medium">
-          Featured work
+          Featured Project
         </Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/safebus-school-transport-platform",
   },
   subline: (
     <>
-      I'm Dean, a software Developer at{" "}
-      <Logo
-        dark
-        icon="/trademarks/wordmark-dark.svg"
-        style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}
-      />
-      , where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Hi, I’m Dean — a software developer @iLabAfrica 
+      , currently advancing Kenya’s innovation ecosystem through robust digital systems.
+      <br />I’m passionate about merging data, design, and development to create tools that make a real difference.
     </>
   ),
 };
@@ -81,219 +71,171 @@ const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
-  description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+  description: `Learn about ${person.name}, a Nairobi-based software developer shaping Africa’s digital future.`,
   tableOfContent: {
     display: true,
     subItems: false,
   },
-  avatar: {
-    display: true,
-  },
-  calendar: {
-    display: true,
-    link: "https://cal.com",
-  },
+  avatar: { display: true },
+  calendar: { display: true, link: "https://cal.com" },
   intro: {
     display: true,
-    title: "Introduction",
+    title: "Who I Am",
     description: (
       <>
-        Dean is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I’m Dean Munywoki — a developer driven by curiosity, faith, and the belief that technology can transform lives.
+        From backend systems to full-stack platforms, I enjoy the thrill of solving real problems through clean code and creative thinking.
+        My journey has taken me through projects that power national transparency portals, e-learning platforms, and IoT systems — each built with purpose and precision.
       </>
     ),
   },
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Experience",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "@iLabAfrica – Strathmore University",
+        timeframe: "Jan 2022 – Present",
+        role: "Software Developer",
         achievements: [
           <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
+            Designed, developed, and deployed software solutions for national platforms, including the Public Procurement Information Portal.
           </>,
           <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
+            Integrated reporting and analytics tools to enable real-time tracking of service requests and data-driven insights.
+          </>,
+          <>
+            Collaborated across multidisciplinary teams to translate stakeholder needs into robust and scalable software.
+          </>,
+          <>
+            Developed core modules for e-learning, helpdesk, and ticketing systems, enhancing user experience and transparency.
           </>,
         ],
         images: [
-          // optional: leave the array empty if you don't want to display images
           {
             src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
+            alt: "PPIP Platform Screenshot",
             width: 16,
             height: 9,
           },
         ],
-      },
-      {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
-        achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
-        ],
-        images: [],
       },
     ],
   },
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Master’s in Data Science and Analytics",
+        description: <>Strathmore University, Nairobi (2025 – Present)</>,
       },
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Bachelor of Business Information Technology",
+        description: <>Strathmore University, Nairobi (2019 – 2022)</>,
+      },
+      {
+        name: "Diploma in Business Information Technology",
+        description: <>Strathmore University, Nairobi (2018 – 2019)</>,
+      },
+      {
+        name: "Certificate in Full Stack Software Development",
+        description: <>Strathmore University (2023)</>,
+      },
+      {
+        name: "Certificate in Data Science",
+        description: <>Strathmore University (2020)</>,
       },
     ],
   },
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Technical & Soft Skills",
     skills: [
       {
-        title: "Figma",
+        title: "Full Stack Development",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Experienced in building secure, performant, and responsive applications using
+            Laravel, Django, Flask, Node.js, and React. Skilled at translating business logic
+            into maintainable codebases.
+          </>
         ),
         tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+          { name: "Laravel", icon: "laravel" },
+          { name: "Django", icon: "python" },
+          { name: "React", icon: "react" },
+          { name: "Node.js", icon: "nodejs" },
         ],
       },
       {
-        title: "Next.js",
+        title: "Data Science & Machine Learning",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Passionate about turning data into actionable insights using Python, Pandas, and ML frameworks.
+            My MSc research explores intelligent systems that enhance national digital infrastructure.
+          </>
         ),
         tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
+          { name: "Python", icon: "python" },
+          { name: "Pandas", icon: "database" },
+          { name: "TensorFlow", icon: "ai" },
         ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
+      },
+      {
+        title: "Cloud & DevOps",
+        description: (
+          <>
+            Skilled in CI/CD, Docker, and Cloud Computing. Experienced in deploying applications securely using
+            modern pipelines and containerized environments.
+          </>
+        ),
+        tags: [
+          { name: "Docker", icon: "docker" },
+          { name: "CI/CD", icon: "code" },
+          { name: "Cloud", icon: "cloud" },
         ],
-      },  
+      },
+      {
+        title: "Soft Skills",
+        description: (
+          <>
+            Creative thinker, problem solver, and communicator.
+            Known for adaptability, leadership, and fostering collaborative innovation.
+          </>
+        ),
+        tags: [
+          { name: "Leadership", icon: "team" },
+          { name: "Creativity", icon: "lightbulb" },
+        ],
+      },
     ],
   },
-};
-
-const blog: Blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
 };
 
 const work: Work = {
   path: "/work",
   label: "Work",
   title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  description: `A collection of impactful software projects by ${person.name}.`,
+};
+
+const blog: Blog = {
+  path: "/blog",
+  label: "Blog",
+  title: "Notes, Lessons & Reflections",
+  description: `Insights, projects, and thoughts from ${person.name} on technology and growth.`,
 };
 
 const gallery: Gallery = {
   path: "/gallery",
   label: "Gallery",
-  title: `Photo gallery – ${person.name}`,
-  description: `A photo collection by ${person.name}`,
-  // Images by https://lorant.one
-  // These are placeholder images, replace with your own
+  title: `Photo Gallery – ${person.name}`,
+  description: `Snapshots of creativity, code, and community moments from ${person.name}'s journey.`,
   images: [
-    {
-      src: "/images/gallery/horizontal-1.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-4.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-3.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-1.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/vertical-2.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
-    {
-      src: "/images/gallery/horizontal-2.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/horizontal-4.jpg",
-      alt: "image",
-      orientation: "horizontal",
-    },
-    {
-      src: "/images/gallery/vertical-3.jpg",
-      alt: "image",
-      orientation: "vertical",
-    },
+    { src: "/images/gallery/horizontal-1.jpg", alt: "project image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-1.jpg", alt: "work environment", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-2.jpg", alt: "project demo", orientation: "horizontal" },
   ],
 };
 
