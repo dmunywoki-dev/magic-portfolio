@@ -233,7 +233,6 @@ const gallery: Gallery = {
   title: `Photo Gallery – ${person.name}`,
   description: `Snapshots of creativity, code, and community moments from ${person.name}'s journey.`,
   images: [
-    { src: "/images/gallery/horizontal-1.jpeg", alt: "project image", orientation: "horizontal" },
     { src: "/images/gallery/vertical-1.jpeg", alt: "work environment", orientation: "vertical" },
     { src: "/images/gallery/horizontal-2.jpeg", alt: "project demo", orientation: "horizontal" },
   ],
