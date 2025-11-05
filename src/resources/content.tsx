@@ -22,14 +22,14 @@ const newsletter: Newsletter = {
 
 const social: Social = [
   {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/Dean-bit",
+    name: "GitLab",
+    icon: "gitLab",
+    link: "https://gitlab.com/dmunywoki",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/dean-munywoki-50202a200//",
+    link: "https://www.linkedin.com/in/dean-munywoki-50202a200/",
   },
   {
     name: "Email",
