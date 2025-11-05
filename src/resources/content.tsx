@@ -7,7 +7,7 @@ const person: Person = {
   name: `Dean Munywoki`,
   role: "Software Developer",
   avatar: "/images/avatar.jpg",
-  email: "dmunywoki@strathmore.edu",
+  email: "deanmaingi@gmail.com",
   location: "Africa/Nairobi",
   languages: ["English", "Swahili"],
 };
@@ -24,12 +24,12 @@ const social: Social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/deanmunywoki",
+    link: "https://github.com/Dean-bit",
   },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/in/dean-munywoki/",
+    link: "https://www.linkedin.com/in/dean-munywoki-50202a200//",
   },
   {
     name: "Email",
@@ -233,9 +233,9 @@ const gallery: Gallery = {
   title: `Photo Gallery – ${person.name}`,
   description: `Snapshots of creativity, code, and community moments from ${person.name}'s journey.`,
   images: [
-    { src: "/images/gallery/horizontal-1.jpg", alt: "project image", orientation: "horizontal" },
-    { src: "/images/gallery/vertical-1.jpg", alt: "work environment", orientation: "vertical" },
-    { src: "/images/gallery/horizontal-2.jpg", alt: "project demo", orientation: "horizontal" },
+    { src: "/images/gallery/horizontal-1.jpeg", alt: "project image", orientation: "horizontal" },
+    { src: "/images/gallery/vertical-1.jpeg", alt: "work environment", orientation: "vertical" },
+    { src: "/images/gallery/horizontal-2.jpeg", alt: "project demo", orientation: "horizontal" },
   ],
 };
 
